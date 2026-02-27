@@ -5,12 +5,14 @@ import LaterHandAnimation from "./LateralHandAnimation";
 import FullHandAnimation from "./FullHandAnimation";
 import KneeRaiseAnimation from "./KneeRaiseAnimation";
 import StageLighting from "./StageLighting";
+import LaunchModal from "./LaunchModal";
 
 export default function App() {
   const [animation, setAnimation] = useState("hands");
 
   return (
     <>
+      <LaunchModal />
       {/* Buttons */}
       <div style={buttonRow}>
         <button
